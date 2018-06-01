@@ -132,6 +132,9 @@ public class Ventanita extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -151,6 +154,17 @@ public class Ventanita extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        Longitud g=new Longitud();
+        //A este objeto le asignamos un valor a su atributo centigrados
+        g.setMetros(Float.parseFloat(jTextField2.getText()));
+        
+        //Creamos un objeto de la clase Conversion
+        Conversion c=new Conversion();
+        c.setLongitud(g);
+        //Aplicar el modelo
+        
+        
+        jLabel4.setText(""+c.metrosAPies());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

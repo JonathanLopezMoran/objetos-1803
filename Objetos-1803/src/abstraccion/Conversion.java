@@ -35,6 +35,10 @@ public class Conversion {
     public void setLongitudes(Longitud longitud) {
         this.longitud = longitud;
     }
+
+    void setLongitud(Longitud g) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
